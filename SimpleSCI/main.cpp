@@ -12,5 +12,7 @@ int main(int argc, char *argv[])
 
     w.setDisplay("Banialuki jakies z tymi lokienkami");
     w.show();
+
+    std::cout<<w.sText()<<"bundle";
     return a.exec();
 }

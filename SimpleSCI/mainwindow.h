@@ -30,6 +30,7 @@ public:
     ~MainWindow();
 
     QString const Text(){return currentFile;}; //getter
+    std::string const sText(){return this->Text().toStdString();}; //getter ale zwracajacy string
     void Text(std::string text){currentFile = QString::fromStdString(text);}; //setter
     void Text(QString text){currentFile = std::move(text);};
 
